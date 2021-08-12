@@ -16,6 +16,9 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+a:hover {
+    text-decoration: underline;
+}
 
 header nav .nav-right-section{
     width: 250px;
@@ -24,6 +27,7 @@ header nav .nav-right-section{
     list-style: none;
     justify-content: center;
     align-items:center;
+    padding-right: 15px;
 }
 
 nav .nav-right-section a{
@@ -35,19 +39,31 @@ nav .nav-right-section .menu-icon {
     background-image: url("https://static.thenounproject.com/png/256131-200.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 15px;
-    height: 15px;
+    background-size: 15px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
 }
 
 nav .nav-right-section img{
     border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+nav .nav-right-section .background {
     margin-left: 10px;
+    width: 37px;
+    height: 37px;
+}
+
+nav .nav-right-section .background:hover {
+    background-color: #eff0f0;
+    border-radius: 50%;
 }
 
 main {
-    margin-top: 150px;
     text-align: center;
 }
 
@@ -57,7 +73,7 @@ main .main-logo {
 }
 
 main .main-logo img {
-    width: 272px;
+    width: 274px;
 }
 
 main .main-input {
