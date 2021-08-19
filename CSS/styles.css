@@ -101,6 +101,7 @@ main .main-input .main-input-container:hover {
     height: 40px;
     border: none;
     outline: none;
+    font-size: 16px;
 }
 
 .main-input .main-input-container .search-icon {
@@ -138,15 +139,74 @@ main .main-buttons button {
     border: 0;
     height: 36px;
     font-size: 14px;
-    margin-right: 13px;
+    margin-right: 15px;
     padding: 0 15px;
     color: #727486;
     border-radius: 5px;
 }
 main .main-buttons button:hover {
-    box-shadow:0 1px 1px #72748647;
-    border: 1px solid #72748647;
+    box-shadow:0 1px 1px #000001;
+    border: 1px solid #c6c6c6;
     color: #45494b;
-    margin-right: 13px;
 }
 
+main .language {
+    width: 530px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+main .language span {
+    font-size: 18px;
+    color: #3c4043;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #f2f2f2;
+    color: #71767b;
+}
+.country {
+    height: 50px;
+}
+
+.country span {
+    display: block;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 15px;
+    
+}
+.footer {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #c7c8ca;
+    align-items: center;
+    grid-auto-flow: row;
+}
+
+.footer ul {
+    margin: 12px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.footer .footer-left {
+    justify-self:flex-end;
+}
+
+.footer .footer-right {
+    justify-self: center;
+}
+
+.footer ul li a{
+    margin: 10px;
+    color: #71767b;
+}
